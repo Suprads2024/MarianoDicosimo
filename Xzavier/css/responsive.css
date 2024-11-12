@@ -1,0 +1,364 @@
+/* Xzavier - HTML Template */
+
+@media only screen and (max-width: 1300px){
+	
+	.page-wrapper{
+		overflow:hidden;	
+	}
+	
+}
+
+@media only screen and (max-width: 1199px){
+	
+}
+
+@media only screen and (max-width: 1060px){
+	.info-box-one {
+	    padding: 25px 0px 23px 50px;
+	}
+	.info-box-one .icon-box {
+    	left: 15px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+		
+	.main-slider h1{
+		font-size:70px;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.navbar-collapse.collapse {
+	    display: block!important;
+	    height: auto!important;
+	    padding-bottom: 0;
+	    overflow: visible!important;
+	}
+	.navbar-toggle {
+		display: none;
+	}
+	.navbar-toggler {
+		display: none;
+	}
+	.dropdown-btn {
+		display: none;
+	}
+	.lg-left-minus-60 {
+		position: relative;
+		left: -60px;
+	}
+	.lg-right-minus-60 {
+		position: relative;
+		right: -60px;
+	}
+	.mockup-six img {
+		max-width: none;
+		position: relative;
+		left: -56px;
+	}
+
+}
+
+@media only screen and (max-width: 900px){
+	.main-slider h1{
+		font-size:60px;
+	}
+	.main-slider h2{
+		font-size:40px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+
+	.flex-box-one {
+		display: block;
+	}
+
+	.navbar-toggler {
+		outline: none;
+	}
+
+	.navbar {
+		display: block;
+	}
+
+	.main-menu .navbar-brand {
+	    margin: 12px 0;
+	}
+
+	.main-menu .outer-box .btn-style-two {
+	    padding: 8px 24px;
+	}
+
+	.main-menu .outer-box {
+		top: 13px;
+	}
+
+	.navbar-toggler {
+	    position: absolute;
+	    left: 60%;
+	    top: 10px;
+	    margin-left: -28px;
+	    /* border: 1px solid #fff; */
+	}
+
+	.navbar-toggler-icon {
+		position: relative;
+	}
+
+	.navbar-toggler-icon:before {
+	    position: absolute;
+	    content: "\f0c9";
+	    font-size: 36px;
+	    font-family: fontawesome;
+	    color: #fff;
+	    left: 0;
+	    top: 0;
+	    cursor: pointer;
+	}
+
+	.main-menu .navbar-nav {
+	    display:  block;
+	    margin-right: 0;
+	    background-color: rgba(77, 76, 76, 0.9607843137254902);
+	}
+
+	.main-menu .navbar-nav > li > a {
+	    padding: 8px 12px;
+	    border-bottom: 1px solid #ffffff4f;
+	}
+
+	.main-header .nav-outer .socail-icon-area {
+	    right: 54px;
+	    z-index: 99;
+	}
+
+	.main-header .header-lower .search-box-outer .dropdown-menu {
+	    left: inherit;
+	}
+
+	.main-header .outer-box {
+		position: absolute;
+		right: 12px;
+		z-index: 99;
+		top: -2px;
+	}
+
+	.dropdown-btn {
+	    position: absolute;
+	    right: 5px;
+	    top: 0;
+	    width: 50px;
+	    height: 42px;
+	    border-left: 1px solid #1a151536;
+	    text-align: center;
+	    font-size: 16px;
+	    line-height: 44px;
+	    color: #ffffff;
+	    cursor: pointer;
+	    z-index: 5;
+	}
+
+	.main-menu .navbar-nav > li > ul {
+	    position:  relative;
+	    opacity:  1;
+	    visibility:  visible;
+	    display: none;
+	    width:  100%;
+	    background: #fff;
+	    transition:  none;
+	}
+
+	.main-menu .navbar-nav > li > ul > li:hover > a {
+	    background:  #fff;
+	    color:  #222;
+	}
+
+	.navbar-toggle .icon-bar {
+	    display: block;
+	    background: #000000;
+	    width: 30px;
+	    height: 2px;
+	    border-radius: 1px;
+	}
+
+	.navbar-toggle .icon-bar+.icon-bar {
+	    margin-top: 6px;
+	}
+
+	.main-header .main-menu{
+		padding-top:0px;
+		width:100%;
+		margin:0px;
+	}
+
+	.main-header .sticky-header .main-menu {
+		display: none;
+	}
+	
+	.main-menu .collapse {
+	   max-height: 400px;
+	   margin-top: 50px!important;
+	   overflow:auto;
+	   float:none;
+	   width:100%;
+	   border:none;
+	   margin:0px;
+	   -ms-border-radius:3px;
+	   -moz-border-radius:3px;
+	   -webkit-border-radius:3px;
+	   -o-border-radius:3px;
+	   border-radius:3px;
+	}
+   
+	.main-menu .collapse.in,
+	.main-menu .collapsing{
+		padding:0px 0px 0px;
+		border:none;
+		margin:50px 0px 15px;
+		-ms-border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		-o-border-radius:3px;
+		border-radius:3px;	
+	}
+	
+	.main-menu .navbar-header{
+		position:relative;
+		float:none;
+		display:block;
+		text-align:right;
+		width:100%;
+		padding: 45px 0px 20px;
+		right:0px;
+		z-index:12;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle{
+		background: transparent;
+		z-index: 9;
+		cursor: pointer;
+		left: 0;
+		top: 23px;
+		position: absolute;
+		margin: 0 20px;
+	}
+
+	.mockup-one .image-box {
+		margin-top: 0;
+	}
+
+	.mockup-three {
+	    position: relative;
+	    right: 0;
+	    bottom: -60px;
+	}
+	.mockup-four {
+	    position: relative;
+	    right: 0;
+	    text-align: center;
+	    top: -20px;
+	}
+	.mockup-five {
+	    position: relative;
+	    top: 0;
+	}
+	.footer-top .flex-box li {
+	    width: 33.333%;
+	}
+
+}
+@media only screen and (max-width: 820px){
+	
+}
+@media only screen and (max-width: 767px){
+
+	.main-slider h2{
+		font-size:35px;
+		padding-bottom: 10px;
+	}
+	
+	.main-slider h1{
+		font-size:45px;
+	}
+	
+	.about-us .link-btn .theme-btn {
+		margin-top: 40px;
+	}
+
+	.main-slider .tparrows{
+		display: none;
+	}
+}
+@media only screen and (max-width: 599px){
+	
+	.main-slider h1{
+		font-size:38px;
+		line-height: 50px;
+	}
+	.main-slider h2{
+		font-size:25px;
+	}
+	.main-slider .social-icon-one{
+		margin-top: 15px;
+	}
+	.main-slider .social-icon-one li{
+		margin-right: 15px;
+	}
+	.main-slider .social-icon-one li a{
+		font-size: 20px;
+	}
+	.slider-content .content-text{
+		font-size:14px;
+	}
+	.footer-top .flex-box li {
+	    width: 50%;
+	}
+	.main-menu .outer-box .btn-style-two {
+		display: none;
+	}
+	.navbar-toggler {
+		right: 0;
+		left: inherit;
+		margin-left: inherit;
+		margin-right: 10px;
+	}
+}
+@media only screen and (max-width: 499px){
+	.main-slider h1{
+		font-size:26px;
+		line-height: 50px;
+	}
+	.main-slider h2{
+		font-size:20px;
+	}
+	.main-slider .social-icon-one{
+		margin-top: 15px;
+	}
+	.main-slider .social-icon-one li{
+		margin-right: 10px;
+	}
+	.main-slider .social-icon-one li a{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 365px) {
+	.about-content .signature{
+		display: none;
+	}
+	
+}
+
+@media only screen and (max-width: 350px){
+
+	.main-slider h1{
+		font-size:20px;
+		line-height: 50px;
+	}
+	.main-slider h2{
+		font-size: 16px;
+	}
+}
+

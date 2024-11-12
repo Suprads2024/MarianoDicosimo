@@ -1,0 +1,135 @@
+
+.whatsapp-button2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  
+  
+  }
+  
+  .whatsapp-button2 a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .whatsapp-button2 img {
+    width: 85px;
+    /* Tamaño del icono de WhatsApp */
+    height: 85px;
+  
+  }
+  
+  @media (max-width:600px) {
+  
+  
+  
+  
+  
+    .whatsapp-button2 img {
+        width: 55px;
+        /* Tamaño del icono de WhatsApp */
+        height: 55px;
+  
+    }  }
+  
+  
+
+/* Estilos para la sección de enfoque terapéutico */
+.therapy-approach-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.sec-title h1 {
+    font-size: 36px;
+ 
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.therapy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.therapy-content h2 {
+    font-size: 28px;
+ 
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.therapy-content .description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.therapy-quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+    font-weight: bold;
+    margin: 30px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #444;
+    background-color: #f2f2f2;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .sec-title h1 {
+        font-size: 28px;
+    }
+
+    .therapy-content h2 {
+        font-size: 24px;
+    }
+
+    .therapy-quote {
+        font-size: 20px;
+    }
+
+    .therapy-content .description {
+        font-size: 16px;
+    }
+    .formh2{
+        font-size: 20px;
+    }
+}
+/* Estilos para la sección de "Cómo Trabajo" */
+.how-i-work-section {
+    background-color: #f9f9f9; /* Color de fondo similar a la sección anterior */
+    padding: 60px 0;
+}
+
+.how-i-work-section .sec-title h1 {
+    font-size: 36px;
+color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.how-i-work-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-i-work-content .description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
