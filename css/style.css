@@ -2934,7 +2934,12 @@ figure{
 	color: #000;
 	margin-bottom: 30px;
 }
-
+@media (max-width:786px){
+	.contact-info-box{
+		margin-top: 50px;
+	
+	}
+}
 .info-box-one{
 	position:relative;
 	min-height:56px;
