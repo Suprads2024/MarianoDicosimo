@@ -2283,7 +2283,7 @@ figure{
 */
 
 .about-us{
-	padding: 100px 0px 100px;
+	padding: 50px 0px 60px;
 }
 .about-us .sec-title{
 	margin-bottom: 30px;
@@ -2483,6 +2483,11 @@ figure{
 	padding: 100px 0px 70px;
 }
 
+@media (max-width:786px){
+	.news-section{
+		padding: 50px 0px 70px;
+	}
+}
 .news-section.dark{
 	background: #080808;
 }
@@ -3130,6 +3135,10 @@ figure{
 	margin-bottom: 30px;
 }
 @media (max-width:786px){
+	.contact-info{
+		padding: 50px 0px 100px;
+		background: #f7f7f7;
+	}
 	.contact-info-box{
 		margin-top: 50px;
 	

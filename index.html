@@ -125,26 +125,32 @@
         <!-- about -->
         <section id="about" class="about-us dark" style="background-image:url(images/background/bg2.png);">
             <div class="auto-container">
-
                 <div class="row">
-
+        
+                    <!-- Sección izquierda con imagen -->
                     <div class="col-md-5 col-sm-12">
+                        <!-- Título "Sobre mí" para móvil -->
+                        <div class="sec-title sec-title-mobile">
+                            <h1>Sobre mi</h1>
+                        </div>
                         <div class="about-image-box">
                             <img src="images/piscologo/Toma 4.jpeg" alt="">
                         </div>
                     </div>
-
+        
+                    <!-- Sección derecha con texto -->
                     <div class="col-md-7 col-sm-12">
-
+                        <!-- Título "Sobre mí" para escritorio -->
+                        <div class="sec-title sec-title-desktop">
+                            <h1>Sobre mi</h1>
+                        </div>
                         <div class="about-content dark">
-                            <div class="sec-title">
-                                <h1>Sobre mi</h1>
-                            </div>
                             <div class="text">Soy Psicólogo especializado en ayudar a personas que sufren ataques de
                                 pánico y ansiedad. Mi objetivo es que recuperes la plenitud de tu vida en el menor
                                 tiempo posible y sin necesidad de medicamentos. Cerca del 90% de las personas que son
-                                debidamente tratadas lo consiguen.</div>
-
+                                debidamente tratadas lo consiguen.
+                            </div>
+        
                             <div class="link-btn">
                                 <a href="https://wa.me/+543424767454?text=Hola,%20me%20comunico%20desde%20la%20web,%20quiero%20agendar%20una%20reunión."
                                     class="theme-btn btn-style-two" target="_blank">Agenda una consulta</a>
@@ -157,7 +163,27 @@
                 </div>
             </div>
         </section>
-<style></style>
+        
+<style>
+    /* Por defecto: Ocultar el título de móvil */
+.sec-title-mobile {
+    display: none;
+}
+
+/* Mostrar el título de móvil y ocultar el de escritorio en pantallas pequeñas */
+@media (max-width: 789px) {
+    .sec-title-mobile {
+        display: block; /* Mostrar el título de móvil */
+        text-align: center; /* Centrar el título si es necesario */
+        margin-bottom: 20px;
+    }
+
+    .sec-title-desktop {
+        display: none; /* Ocultar el título de escritorio */
+    }
+}
+
+</style>
         <!-- Enfoque Terapéutico Section -->
         <section class="therapy-approach-section" id="enfoque">
             <div class="auto-container">
@@ -168,7 +194,7 @@
 
                 <!-- Descripción del Método Terapéutico -->
                 <div class="therapy-content">
-                    <h2>Terapia Breve Estratégica</h2>
+                   
                     <p class="description">
                         Trabajo desde la Terapia Breve Estratégica, un método que se centra en modificar y reconstruir
                         tus experiencias emocionales relacionadas con el miedo. No se trata de trucos o consejos

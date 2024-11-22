@@ -90,12 +90,17 @@
 @media (max-width: 768px) {
     .sec-title h1 {
         font-size: 28px;
+        padding-bottom: 40px;
     }
-
+    .services{
+        padding: 50px 0px 45px;
+    }
     .therapy-content h2 {
         font-size: 24px;
     }
-
+    .how-i-work-content .description{
+        margin-top: -20px;
+    }
     .therapy-quote {
         font-size: 20px;
     }
