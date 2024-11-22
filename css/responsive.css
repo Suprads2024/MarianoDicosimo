@@ -328,8 +328,9 @@
 }
 @media only screen and (max-width: 499px){
 	.main-slider h1{
-		font-size:26px;
+		font-size:23px;
 		line-height: 50px;
+		margin: 0 auto;
 	}
 	.main-slider h2{
 		font-size:20px;
