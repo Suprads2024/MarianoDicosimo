@@ -352,7 +352,7 @@ figure{
 .btn-style-two {
 	position:relative;
 	padding: 13px 40px;
-	border-radius: 25px;
+	border-radius: 15px;
 	line-height:24px;
 	color:#222;
 	text-align:center;
@@ -1277,8 +1277,8 @@ figure{
 
 .sec-title{
 	position:relative;
-	margin-bottom: 45px;
-	padding-bottom: 25px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
 	margin-top: -10px;
 }
 
@@ -1310,15 +1310,7 @@ figure{
 	right: -30px;
 }
 
-.sec-title:after {
-	position: absolute;
-	content: '';
-	background: #222;
-	bottom: 8px;
-	height: 5px;
-	width: 50px;
-	left: 0;
-}
+
 
 .sec-title.center:after {
 	left: 50%;
@@ -1334,7 +1326,7 @@ figure{
 	font-weight:900;
 	font-size: 40px;
 	padding-bottom: 8px;
-	padding-top: 3px;
+	padding-top: 30px;
 	letter-spacing: 2px;
 	line-height:1.1em;
 }
@@ -1700,6 +1692,7 @@ figure{
 
 .main-menu .navbar-nav > li > a {
 	position: relative;
+	
 	color: #fff;
 	font-size: 14px;
 	font-weight: 400;
@@ -1719,6 +1712,7 @@ figure{
 	content: "";
 	width: 8px;
 	height: 8px;
+	border-radius: 20px;
 	background: #fff;
 	bottom: 16px;
 	left: 50%;
@@ -1813,71 +1807,94 @@ figure{
 
 ***/
 
-.main-slider{
-	position:relative;
-	z-index:10;
+.main-slider {
+    position: relative;
+    z-index: 10;
+    overflow: hidden; /* Evitar desbordes */
 }
 
-.main-slider .tp-caption{
-	z-index:5 !important;
+/* Overlay oscuro, aplicado únicamente sobre la imagen */
+.main-slider .rev_slider_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen (ajusta la opacidad si es necesario) */
+    z-index: 1; /* Se sitúa por encima de la imagen pero por debajo del texto */
 }
 
-.main-slider .tp-dottedoverlay{
-	background:rgba(0,0,0,0.0) !important;	
+/* Aseguramos que el texto y el contenido queden visibles */
+.main-slider .rev_slider,
+.main-slider .tp-caption,
+.main-slider h1,
+.main-slider h2 {
+    position: relative;
+    z-index: 2 !important; /* Texto queda encima del overlay */
+    color: #ffffff !important; /* Asegura que el texto sea blanco */
 }
 
-.main-slider .tparrows.gyges{
-	display: none !important;
+/* Resto de tus estilos */
+.main-slider .tp-caption {
+    z-index: 5 !important;
 }
 
-.main-slider h2.text-center:before{
-	left:50%;
-	margin-left:-35px;
+.main-slider .tp-dottedoverlay {
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
-.main-slider .text{
-	position:relative;
-	font-size:18px;
-	font-weight:500;
-	color:#fff;
-	line-height:1.7em;
+.main-slider h2.text-center:before {
+    left: 50%;
+    margin-left: -35px;
 }
 
-.main-slider h1{
-	position:relative;
-	font-size:52px;
-	font-weight:700;
-	color:#ffffff;
-	line-height:1.2em;
-	text-transform:uppercase;
-}
-.main-slider h2{
-	position:relative;
-	color:#ffffff;
-	font-size:40px;
-	font-weight:700;
-	line-height:1.2em;
-	text-transform: uppercase;
-	padding-bottom:20px;
-}
-.slider-content{
-	position:relative;
-	padding:35px 30px;
-	background-color:rgba(0,0,0,0.60);
+.main-slider .text {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.7em;
 }
 
-.slider-content h3{
-	position:relative;
-	color:#ffffff;
-	font-size:30px;
-	line-height:1.4em;
-	font-weight:700;
-	padding-bottom:18px;
-	margin-bottom:25px;
-	border-bottom:1px solid rgba(255,255,255,0.20);
+.main-slider h1 {
+    position: relative;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff !important;
+    line-height: 1.2em;
+    text-transform: uppercase;
 }
 
-.slider-content h3:after{
+.main-slider h2 {
+    position: relative;
+    color: #ffffff !important;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.slider-content {
+    position: relative;
+    padding: 35px 30px;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 2; /* Asegura que el contenido esté sobre el overlay */
+}
+
+.slider-content h3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 1.4em;
+    font-weight: 700;
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.slider-content h3:after {
     position: absolute;
     content: '';
     width: 70px;
@@ -1888,30 +1905,35 @@ figure{
     background-color: #1e4398;
 }
 
-.slider-content .content-text{
-	position:relative;
-	color:#ffffff;
-	font-size:16px;
-	font-weight:500;
-	margin-bottom:25px;
+.slider-content .content-text {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
 }
 
-.main-slider .tp-bannertimer{
-	display:none !important;	
+.main-slider .tp-bannertimer {
+    display: none !important;
 }
 
-.main-slider .tparrows{
-	cursor: pointer;
-    background:rgba(0, 0, 0, 0.39);
+.main-slider .tparrows {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.39);
     width: 70px;
     height: 70px;
     position: absolute;
     display: block;
     z-index: 1000;
+    border-radius: 20px;
 }
-.main-slider .tparrows:before{
-	line-height: 70px;
+
+.main-slider .tparrows:before {
+    line-height: 70px;
 }
+
+
+
 
 /*** 
 
@@ -2092,10 +2114,10 @@ figure{
 }
 .about-image-box img {
     width: auto;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 .about-content{
-	margin-top: 50px;
+	margin-top: 5px;
 }
 .about-content.dark .text{
 	color: #ccc;
@@ -2107,13 +2129,36 @@ figure{
 .about-content .link-btn{
 	display: inline-block;
 	margin-right: 60px;
+	
 }
 .signature .text{
+	
 	font-size: 50px;
 	font-weight: 400;
     padding-top: 15px;
     font-family: 'Mr De Haviland', cursive;
 }
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+	.about-us .link-btn .theme-btn{
+		margin-left: 60px;
+	}
+    #about .about-content {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    #about .link-btn {
+        margin-bottom: 20px; /* Añade espacio entre el botón y el texto */
+    }
+
+    #about .signature {
+        margin-top: 10px; /* Espacio superior para separar el texto */
+    }
+}
+
 
 /* factcounter */
 
@@ -2549,7 +2594,7 @@ figure{
 }
 
 .comments-area .comment .more-link a:hover{
-	color: ##7432d9;
+	color: #7432d9;
 }
 
 
@@ -2773,7 +2818,7 @@ figure{
 }
 
 
-/* contact-form sytle four */\
+/* contact-form sytle four */
 
 
 .contact_form_area {
@@ -2788,6 +2833,7 @@ figure{
 .contact-form.style-four {
 	background:  #fff;
 	padding: 40px 50px 50px;
+	border-radius: 15px;
 	box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.08);
 	z-index: 9;
 }
@@ -2882,6 +2928,7 @@ figure{
 	padding: 40px 30px 13px;
 	box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.08);
 	background: #fff;
+	border-radius: 15px;
 }
 .contact-info-box h4{
 	color: #000;
@@ -2894,7 +2941,7 @@ figure{
 	font-size: 18px;
 	color:#777777;
 	border: 1px solid #ddd;
-
+border-radius: 15px;
 	padding: 25px 0px 23px 80px;
 	margin-bottom: 21px;
 }
