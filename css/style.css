@@ -2343,8 +2343,11 @@ figure{
     }
 
     .about-image-box img {
-        width:250px; /* Ajusta el tamaño de la imagen si es necesario */
+		
+        width:300px; /* Ajusta el tamaño de la imagen si es necesario */
         margin: 0 auto; /* Centra dentro del contenedor */
+		margin-top: -50px;
+		margin-bottom: 10px;
     }
 
     .about-content {
