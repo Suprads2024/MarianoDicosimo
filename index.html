@@ -34,6 +34,7 @@
         <div id="home"></div>
         <!-- Navigation -->
         <div class="main-menu">
+            <!-- Modificación del Nav -->
             <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
                 <div class="container d-flex justify-content-between align-items-center">
                     <!-- Logo a la izquierda -->
@@ -48,7 +49,7 @@
                     <!-- Menú de navegación a la derecha -->
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
+                            <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#home">Inicio</a>
                             </li>
                             <li class="nav-item">
@@ -56,28 +57,62 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#enfoque">Enfoque</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#panico">Ataques de Pánico</a>
-
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#resultados">Resultados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="https://marianodicosimo.wordpress.com/blog/" target="_blank">Blog</a>
+                                <a class="nav-link js-scroll-trigger" href="https://marianodicosimo.wordpress.com/blog/"
+                                    target="_blank">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" id="openPopup" href="javascript:void(0)">Formación</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
                             </li>
-
+                            
                             
                         </ul>
                     </div>
                 </div>
             </nav>
+
+            <!-- Popup -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" id="closePopup">&times;</span>
+                    <h2>Formación y Experiencia</h2>
+                    <div class="popup-body">
+                        <p><strong>Graduado como Psicólogo:</strong> Universidad Nacional de Rosario (Argentina), 2002.
+                            Matrícula Profesional Nº 1618 del Colegio de Psicólogos de la Provincia de Santa Fe (1ra.
+                            Circunscripción).</p>
+                        <p><strong>Máster en Terapia Breve Estratégica:</strong> Centro di Terapia Strategica de Arezzo
+                            (Italia) - Sede en Madrid (2020/22), Método de Giorgio Nardone.</p>
+                        <p><strong>Terapias Psicoanalíticas Resolutivas:</strong> Red Psicoterapéutica – Rosario,
+                            Argentina. (2015).</p>
+                        <p><strong>Diplomatura en Talleres para Padres:</strong> Sistema P.E.C.E.S. (México D.F.)
+                            (2006).</p>
+                        <p><strong>Experiencia Profesional:</strong></p>
+                        <ul>
+                            <li>2002-presente: Atención psicológica en consultorio particular.</li>
+                            <li>2009-2014: Acompañante Convivencial en el Hogar de Niños «J.M. Estrada» (Santa Fe).</li>
+                            <li>2011-2012: Psicólogo asesor del plantel profesional de fútbol del Club Atlético Unión de
+                                Santa Fe.</li>
+                            <li>2013-2015: Coordinación de Talleres para padres en Instituciones Vecinales de Santa Fe.
+                            </li>
+                            <li>2015-2019: Psicólogo en la Secretaría de Niñez, Ministerio de Desarrollo Social (Santa
+                                Fe).</li>
+                            <li>2020-presente: Equipo Técnico en la Secretaría de Prácticas Socio Comunitarias del
+                                Ministerio de Desarrollo Social (Santa Fe).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="whatsapp-button2">
@@ -89,30 +124,34 @@
         <header class="hero-header">
             <!-- Imagen de fondo -->
             <div class="hero-image" style="background-image: url('images/piscologo/header1.jpg');"></div>
-            
+
             <!-- Contenido del header -->
             <div class="hero-content">
                 <!-- Texto con animación -->
                 <div class="tp-caption fade-in-text">
                     <h2>Recupera el control</h2>
                 </div>
-        
+
                 <div class="tp-caption slide-in-text">
                     <h2>Terapia breve estratégica</h2>
                 </div>
-        
+
                 <!-- Redes sociales con animación -->
                 <div class="tp-caption fade-in-socials">
                     <ul class="social-icon-one">
-                        <li><a href="https://www.facebook.com/psicologomarianodicosimo" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.tiktok.com/@marianodicosimo?_t=8rbZ1dXpzex&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                        <li><a href="https://www.instagram.com/psic.marianodicosimo" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/mariano-dicosimo-422810103" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/psicologomarianodicosimo" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@marianodicosimo?_t=8rbZ1dXpzex&_r=1" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="https://www.instagram.com/psic.marianodicosimo" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mariano-dicosimo-422810103" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        
+
 
         <style>
             .main-slider .tparrows {
@@ -126,7 +165,7 @@
         <section id="about" class="about-us dark" style="background-image:url(images/background/bg2.png);">
             <div class="auto-container">
                 <div class="row">
-        
+
                     <!-- Sección izquierda con imagen -->
                     <div class="col-md-5 col-sm-12">
                         <!-- Título "Sobre mí" para móvil -->
@@ -137,7 +176,7 @@
                             <img src="images/piscologo/Toma 4.jpeg" alt="">
                         </div>
                     </div>
-        
+
                     <!-- Sección derecha con texto -->
                     <div class="col-md-7 col-sm-12">
                         <!-- Título "Sobre mí" para escritorio -->
@@ -146,11 +185,11 @@
                         </div>
                         <div class="about-content dark">
                             <div class="text">Soy Psicólogo especializado en ayudar a personas que sufren ataques de
-                                pánico y ansiedad. Mi objetivo es que recuperes la plenitud de tu vida en el menor
+                                pánico y ansiedad. Mi objetivo es ayudarte a recuperar el control de tu vida en el menor
                                 tiempo posible y sin necesidad de medicamentos. Cerca del 90% de las personas que son
                                 debidamente tratadas lo consiguen.
                             </div>
-        
+
                             <div class="link-btn">
                                 <a href="https://wa.me/+543424767454?text=Hola,%20me%20comunico%20desde%20la%20web,%20quiero%20agendar%20una%20reunión."
                                     class="theme-btn btn-style-two" target="_blank">Agenda una consulta</a>
@@ -163,27 +202,29 @@
                 </div>
             </div>
         </section>
-        
-<style>
-    /* Por defecto: Ocultar el título de móvil */
-.sec-title-mobile {
-    display: none;
-}
 
-/* Mostrar el título de móvil y ocultar el de escritorio en pantallas pequeñas */
-@media (max-width: 789px) {
-    .sec-title-mobile {
-        display: block; /* Mostrar el título de móvil */
-        text-align: center; /* Centrar el título si es necesario */
-        margin-bottom: 20px;
-    }
+        <style>
+            /* Por defecto: Ocultar el título de móvil */
+            .sec-title-mobile {
+                display: none;
+            }
 
-    .sec-title-desktop {
-        display: none; /* Ocultar el título de escritorio */
-    }
-}
+            /* Mostrar el título de móvil y ocultar el de escritorio en pantallas pequeñas */
+            @media (max-width: 789px) {
+                .sec-title-mobile {
+                    display: block;
+                    /* Mostrar el título de móvil */
+                    text-align: center;
+                    /* Centrar el título si es necesario */
+                    margin-bottom: 20px;
+                }
 
-</style>
+                .sec-title-desktop {
+                    display: none;
+                    /* Ocultar el título de escritorio */
+                }
+            }
+        </style>
         <!-- Enfoque Terapéutico Section -->
         <section class="therapy-approach-section" id="enfoque">
             <div class="auto-container">
@@ -194,7 +235,7 @@
 
                 <!-- Descripción del Método Terapéutico -->
                 <div class="therapy-content">
-                   
+
                     <p class="description">
                         Trabajo desde la Terapia Breve Estratégica, un método que se centra en modificar y reconstruir
                         tus experiencias emocionales relacionadas con el miedo. No se trata de trucos o consejos
@@ -307,7 +348,8 @@
                                 </div>
 
                             </div>
-                            <h4 class="counter-title dark">Recuperarás el control de tu vida y tu bienestar emocional.
+                            <h4 class="counter-title dark">Te ayudaré a recuperar el control de tu vida y tu bienestar
+                                emocional.
                             </h4>
                         </div>
                     </div>
@@ -352,7 +394,7 @@
                                             data-speed="2000"></span>%</div>
                                 </div>
                                 <h3></h3>
-                                <div class="text">Cerca del 88% de los pacientes reportan mejoras significativas tras la
+                                <div class="text">Cerca del 88% de los pacientes reportan algún tipo de mejoría tras la
                                     primera sesión de tratamiento.</div>
                             </div>
                         </div>
@@ -542,7 +584,7 @@
                     </div>
                     <div class="col-lg-4 col-md-5">
                         <div class="contact-info-box">
-                        
+
                             <div class="info-box-one">
                                 <div class="icon-box"><span class="flaticon-placeholder"></span></div>
                                 <ul>
@@ -630,12 +672,13 @@
                                 </div>
                                 <ul class="link-list">
                                     <li><a href="#about">Sobre mí</a></li>
-
                                     <li><a href="#enfoque">Enfoque</a></li>
                                     <li><a href="#contacto">Contacto</a></li>
+                                    <li><a href="javascript:void(0);" id="openPopupFooter">Formación</a></li>
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 

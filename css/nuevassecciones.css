@@ -138,3 +138,132 @@ color: #444;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+/* Estilo general del popup */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal del contenido del popup */
+.popup-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    animation: fadeIn 0.5s ease; /* Animación suave */
+    overflow-y: auto; /* Scroll automático si el contenido es largo */
+    max-height: 90%; /* Limita la altura */
+    position: relative;
+}
+
+/* Título del popup */
+.popup-content h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #000000; /* Línea decorativa debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del texto general */
+.popup-body p,
+.popup-body ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Color suave para el texto */
+    margin-bottom: 15px;
+}
+
+/* Destacar títulos dentro del contenido */
+.popup-body p strong {
+    color: #000000; /* Color principal */
+    font-weight: bold;
+}
+
+/* Lista de experiencia */
+.popup-body ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.popup-body ul li {
+    margin-bottom: 10px;
+    list-style: disc;
+    color: #555; /* Color suave */
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff4b4b; /* Color de advertencia al pasar el ratón */
+}
+
+/* Efectos visuales */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 20px;
+    }
+
+    .popup-content h2 {
+        font-size: 22px;
+    }
+
+    .popup-body p,
+    .popup-body ul {
+        font-size: 14px;
+    }
+}
+
+/* Botón de "Formación" */
+.navbar-nav .nav-item .btn {
+    padding: 0; /* Reduce padding extra */
+    margin: 0; /* Quita margen adicional */
+    line-height: inherit; /* Asegura que el botón respete la altura de línea */
+    font-size: inherit; /* Asegura que tenga el mismo tamaño de texto que los enlaces */
+    color: #fff; /* Mantén el color blanco del texto */
+    background-color: transparent; /* Elimina el color de fondo azul */
+    border: none; /* Elimina bordes */
+    text-decoration: none; /* Asegura que no tenga subrayado */
+}
+
+/* Asegura que el botón de "Formación" actúe como los demás enlaces al pasar el ratón */
+.navbar-nav .nav-item .btn:hover {
+    color: #ddd; /* Cambia el color al pasar el ratón, como los otros enlaces */
+    background-color: transparent; /* Sin fondo */
+}
